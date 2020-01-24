@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  background-image: url('assets/paven.png');
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  align-items: center;
+  background-color: rgba(55,55,55,0.6);
+  backdrop-filter: blur(2px);
+  margin-bottom: 20px;
+}
+
+.navbar .nav-link {
+  text-decoration: none;
+  color: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.navbar .nav-link.active {
+  background-color: rgb(55,55,55);
+}
+
+.navbar .nav-link:visited {
+  color: white;
+}
+
+.navbar .left-side {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar .right-side {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .container {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .container {
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .container {
+    padding-right: 6rem;
+    padding-left: 6rem;
+  }
+}
