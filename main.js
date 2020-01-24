@@ -5,7 +5,7 @@ import Observable from './Observable.js';
 const currentRoute = new Observable('/');
 const navLinks = document.querySelectorAll('.nav-link');
 
-currentRoute.subscribe(newRoute => {
+const unsubscribeCurrentRoute = currentRoute.subscribe(newRoute => {
   navLinks.forEach(link => {
     link.classList.remove('active');
     if(link.dataset.path === newRoute) {
