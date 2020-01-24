@@ -13,7 +13,11 @@ h1,h2,h3,h4,h5,h6,p {
 
 body {
   margin: 0;
-  background-image: url('assets/paven.png');
+  background-image: url('assets/bg.webp');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
 }
 
 .navbar {
@@ -21,7 +25,7 @@ body {
   flex-direction: row;
   height: 50px;
   align-items: center;
-  background-color: rgba(55,55,55,0.6);
+  background-color: rgba(55,55,55,0.8);
   backdrop-filter: blur(2px);
   margin-bottom: 20px;
 }
@@ -38,7 +42,12 @@ body {
 }
 
 .navbar .nav-link.active {
-  background-color: rgb(55,55,55);
+  background-color: white;
+  color: black;
+}
+
+.navbar .nav-link.active:visited {
+  color: black;
 }
 
 .navbar .nav-link:visited {
@@ -66,28 +75,32 @@ body {
 .container {
   width: 100%;
   display: flex;
+  background-color: rgba(55,55,55,0.6);
+  backdrop-filter: blur(2px);
+  padding: 1.5rem;
+  color: white;
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .container {
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
+    width: 90%;
+    margin: 0 auto;
   }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .container {
-    padding-right: 3rem;
-    padding-left: 3rem;
+    width: 80%;
+    margin: 0 auto;
   }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .container {
-    padding-right: 6rem;
-    padding-left: 6rem;
+    width: 80%;
+    margin: 0 auto;
   }
 }

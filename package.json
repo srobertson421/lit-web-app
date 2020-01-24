@@ -1,0 +1,19 @@
+{
+  "name": "lit-web-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "servor"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/srobertson421/lit-web-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/srobertson421/lit-web-app/issues"
+  },
+  "homepage": "https://github.com/srobertson421/lit-web-app#readme"
+}
